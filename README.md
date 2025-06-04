@@ -192,9 +192,3 @@ Imprime en consola:
 Limpia una carpeta recreándola desde cero (ej. `crops/`, `placas/`).
 
 ---
-
-## Notas Adicionales
-
-- El OCR puede fallar si las placas están borrosas, mal recortadas o tienen baja resolución.
-- PaddleOCR **funciona sin GPU**, pero puede ser más lento.
-- Asegúrate de que las imágenes en `placas/` no estén duplicadas para evitar OCR redundante.
