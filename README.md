@@ -4,7 +4,7 @@ Este proyecto en Python permite detectar vehículos (autos, buses y camiones) en
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 .
@@ -25,7 +25,7 @@ Este proyecto en Python permite detectar vehículos (autos, buses y camiones) en
 └── README.md               # Documentación del proyecto
 ```
 
-### 🛠️ Dependencias Internas
+### Dependencias Internas
 
 ```python
 import threading
@@ -39,7 +39,7 @@ from collections import deque
 
 ---
 
-## ▶️ Cómo Usar
+## Cómo Usar
 
 1. **Clona este repositorio**
 2. Coloca tu video de entrada en:  
@@ -56,7 +56,7 @@ from collections import deque
 
 ---
 
-## 🧠 Estructura del Código
+## Estructura del Código
 
 ### `main.py`
 
@@ -68,7 +68,7 @@ Coordina todo el flujo del proyecto:
 
 ---
 
-### 📦 Módulo `detector/`
+### Módulo `detector/`
 
 #### `detector_placas.py`
 
@@ -132,7 +132,7 @@ Este módulo es el **corazón del sistema**: administra la detección de vehícu
 
 ---
 
-### 🚀 Clase `DetectorAsincrono`
+### Clase `DetectorAsincrono`
 
 Inicializa los modelos y estructuras de control:
 
@@ -151,7 +151,7 @@ detector = DetectorAsincrono(modelo_vehiculos_path, modelo_placas_path)
 
 ---
 
-### 🔍 Funciones Internas
+### Funciones Internas
 
 #### `detectar_vehiculos_thread(self)`
 
