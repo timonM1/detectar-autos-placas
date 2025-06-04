@@ -14,6 +14,15 @@ from .detector_vehiculos import DetectorVehiculos
 
 class DetectorAsincrono:
     def __init__(self, modelo_vehiculos_path, modelo_placas_path=None):
+        
+        """
+        Inicializa el detector asincrónico de vehículos y placas.
+
+        Args:
+            modelo_vehiculos_path (str): Ruta al modelo para detección de vehículos.
+            modelo_placas_path (str, optional): Ruta al modelo para detección de placas. Default es None.
+        """
+        
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         print(f"🖥️ Usando dispositivo: {self.device.upper()}")
         
@@ -60,7 +69,11 @@ class DetectorAsincrono:
         self.frames_lentos = set()
     
     def detectar_placas_thread(self):
-        """Hilo separado para detección de placas"""
+        """
+        Hilo que se ejecuta para detectar placas de forma asíncrona.
+
+        No recibe parámetros ni devuelve valor.
+        """
         if not self.detector_placas:
             return
             
@@ -109,7 +122,11 @@ class DetectorAsincrono:
                 continue
     
     def detectar_vehiculos_thread(self):
-        """Hilo separado para detección de vehículos"""
+        """
+        Hilo que se ejecuta para detectar vehículos de forma asíncrona.
+
+        No recibe parámetros ni devuelve valor.
+        """
         print("Hilo de detección de vehículos iniciado...")
         
         

@@ -16,7 +16,6 @@ class DetectorVehiculos:
         }
 
     def detectar(self, frame, frame_idx):
-        """Detecta vehículos en un frame"""
         results = self.model(
             frame,
             verbose=False,

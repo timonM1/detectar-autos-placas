@@ -5,13 +5,11 @@ from ultralytics import YOLO
 
 class DetectorPlacas:
     def __init__(self, modelo_placas_path):
-        """Detector de placas independiente"""
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.model_placas = YOLO(modelo_placas_path).to(self.device)
         self.conf_threshold = 0.35  # Umbral de confianza para evitar objetos que el modelo cree que son placas pero con muy poca seguridad
         
     def detectar_placa(self, crop_auto):
-        """Detecta placa en un crop de auto"""
         try:
             # Redimensionar crop para mejor detección
             h, w = crop_auto.shape[:2]
