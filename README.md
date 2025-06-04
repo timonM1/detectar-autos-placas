@@ -44,7 +44,7 @@ from collections import deque
 1. **Clona este repositorio**
 2. Coloca tu video de entrada en:  
    `data/video.mp4`
-3. Crea y activa tu entorno virtual (opcional pero recomendado)
+3. Crea y activa tu entorno virtual
 4. Instala las dependencias:
    ```bash
    pip install -r requirements.txt
