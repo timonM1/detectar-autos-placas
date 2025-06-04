@@ -1,0 +1,8 @@
+RESULTADOS DE LECTURA DE PLACAS
+==================================================
+Fecha: 2025-06-04 01:10:20
+Total procesadas: 2
+Exitosas: 0
+
+placa_19_0_car_1749013794342.jpg | NO_DETECTADO    | ❌ FALLO
+placa_19_0_car_1749013794342.jpg | NO_DETECTADO    | ❌ FALLO
